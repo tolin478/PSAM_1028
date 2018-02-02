@@ -1,4 +1,4 @@
-<p>3 websites I use too much</p>
+3 websites I use too much
 
 <p>Tumblr
 <br><img src = "https://pbs.twimg.com/profile_images/926117422565699584/vxKajRJx_400x400.jpg" width=100px></br>
