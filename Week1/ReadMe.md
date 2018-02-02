@@ -18,7 +18,6 @@ Canvas
 <p>Netflix
 <br><img src = "https://pbs.twimg.com/profile_images/744949842720391168/wuzyVTTX_400x400.jpg" width=100px></br>
 
-
 </p>Jstor
 <br><img src = "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/JSTOR_vector_logo.svg/1200px-JSTOR_vector_logo.svg.png" width=100px></br>
 </p>
