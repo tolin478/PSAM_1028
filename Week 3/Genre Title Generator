@@ -1,0 +1,56 @@
+//Genre: 19th Century British Novel
+
+<!DOCTYPE html>
+
+  <head>
+  
+    <meta charset="utf-8">
+    
+    <title>19th Century British Novel</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+
+NovelLocationsArray = ["Ball","Grange","Heights","Garden","Cottage","Manor","Moors","Library","Drawing Room","Abbey"]
+(10) ["Ball", "Grange", "Heights", "Garden", "Cottage", "Manor", "Moors", "Library", "Drawing Room", "Abbey"];
+
+NovelAdjectivesArray = ["Wretched","Vivacious","Peculiar","Proverbial","Jubilant","Calamitious","Dismal","Brooding","Wicked","Iniquitous"]
+(10) ["Wretched", "Vivacious", "Peculiar", "Proverbial", "Jubilant", "Calamitious", "Dismal", "Brooding", "Wicked", "Iniquitous"];
+
+NovelTimeArray = ["Dawn","Dusk","Afternoon","Midday","Midnight","Evening","Daylight","In the Dead of Night","Eve","Daytime"]
+(10) ["Dawn", "Dusk", "Afternoon", "Midday", "Midnight", "Evening", "Daylight", "In the Dead of Night", "Eve", "Daytime"];
+
+var Location = NovelLocationsArray[Math.floor(Math.random() * NovelLocationsArray.length)]
+undefined;
+
+var Adjective = NovelAdjectivesArray[Math.floor(Math.random() * NovelAdjectivesArray.length)]
+undefined;
+
+var Time = NovelTimeArray[Math.floor(Math.random() * NovelTimeArray.length)];
+
+var threeWords =  Adjective + " " + Location + " " + "at" + " " + Time;
+
+var twoWords1 = Adjective + " " + Location;
+
+var twoWords2 = Time + " " + Location;
+
+twoWords3 = Adjective + " " + Time
+
+randomNameArray = [threeWords, twoWords1,twoWords2,twoWords3]
+
+randomName = randomNameArray[Math.floor(Math.random() * randomNameArray.length)]
+
+console.log(randomName)
+
+</script>
+
+  </head>
+  
+  <body>
+  
+   <h1><center>Welcome to the 19th Century British Novel Generator!</center></h1>
+   <center>Refresh the page and check the console for a randomly generated 19th century British novel title!</center>
+    
+  </body>
+</html>
