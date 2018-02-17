@@ -1,0 +1,16 @@
+var firstName = "Natasha"
+undefined
+var middleName = "Nicole"
+undefined
+var lastName = "Tolia"
+undefined
+var firstLetter = firstName.slice(0,1)
+undefined
+var secondLetter = middleName.slice(0,1)
+undefined
+var thirdLetter = lastName.slice(0,1)
+undefined
+var monogram = firstLetter + secondLetter + thirdLetter
+undefined
+monogram
+"NNT"
