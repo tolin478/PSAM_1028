@@ -13,35 +13,22 @@
     <script>
 
 NovelLocationsArray = ["Ball","Grange","Heights","Garden","Cottage","Manor","Moors","Library","Drawing Room","Abbey"]
-(10) ["Ball", "Grange", "Heights", "Garden", "Cottage", "Manor", "Moors", "Library", "Drawing Room", "Abbey"];
+NovelAdjectivesArray = ["Wretched","Vivacious","Peculiar","Proverbial","Jubilant","Calamitious","Dismal","Brooding","Wicked","Iniquitous"];
+NovelTimeArray = ["Dawn","Dusk","Afternoon","Midday","Midnight","Evening","Daylight","Nighttime","Eve","Daytime"]
 
-NovelAdjectivesArray = ["Wretched","Vivacious","Peculiar","Proverbial","Jubilant","Calamitious","Dismal","Brooding","Wicked","Iniquitous"]
-(10) ["Wretched", "Vivacious", "Peculiar", "Proverbial", "Jubilant", "Calamitious", "Dismal", "Brooding", "Wicked", "Iniquitous"];
-
-NovelTimeArray = ["Dawn","Dusk","Afternoon","Midday","Midnight","Evening","Daylight","In the Dead of Night","Eve","Daytime"]
-(10) ["Dawn", "Dusk", "Afternoon", "Midday", "Midnight", "Evening", "Daylight", "In the Dead of Night", "Eve", "Daytime"];
-
-var Location = NovelLocationsArray[Math.floor(Math.random() * NovelLocationsArray.length)]
-undefined;
-
-var Adjective = NovelAdjectivesArray[Math.floor(Math.random() * NovelAdjectivesArray.length)]
-undefined;
-
+var Location = NovelLocationsArray[Math.floor(Math.random() * NovelLocationsArray.length)];
+var Adjective = NovelAdjectivesArray[Math.floor(Math.random() * NovelAdjectivesArray.length)];
 var Time = NovelTimeArray[Math.floor(Math.random() * NovelTimeArray.length)];
 
 var threeWords =  Adjective + " " + Location + " " + "at" + " " + Time;
-
 var twoWords1 = Adjective + " " + Location;
-
 var twoWords2 = Time + " " + Location;
+twoWords3 = Adjective + " " + Time;
 
-twoWords3 = Adjective + " " + Time
+randomNameArray = [threeWords, twoWords1,twoWords2,twoWords3];
+randomName = randomNameArray[Math.floor(Math.random() * randomNameArray.length)];
 
-randomNameArray = [threeWords, twoWords1,twoWords2,twoWords3]
-
-randomName = randomNameArray[Math.floor(Math.random() * randomNameArray.length)]
-
-console.log(randomName)
+console.log(randomName);
 
 </script>
 
