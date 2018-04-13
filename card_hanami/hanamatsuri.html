@@ -1,0 +1,125 @@
+<!doctype html>
+
+<html>
+<head>
+
+  <title>Hana</title>
+  <link rel="stylesheet" type="text/css" href="hanamatsuri.css">
+
+</head>
+
+<body bgcolor=#ffe8e5 >
+
+  <script src = "https://code.jquery.com/jquery-3.3.1.js"></script>
+
+  <pre class="tree">
+          ; ; ;
+       ;        ;  ;     ;;    ;
+    ;                 ;         ;  ;
+                    ;
+                   ;                ;;
+   ;          ;            ;              ;
+   ;            ';,        ;               ;
+   ;              'b      *
+    ;              '$    ;;                ;;
+   ;    ;           $:   ;:               ;
+ ;;      ;  ;;      *;  @):        ;   ; ;
+              ;     :@,@):   ,;**:'      ;
+;  ;      ;,         :@@*: ;;**'        ;   ;
+;           ';o;    ;:(@';@*"'  ;
+   ;         'bq,;;:,@@*'   ,*         ;  ;
+;                 '@@Pp@@*'          ;   ;
+    ;              Y7'.'          ;  ;
+                ;  :@):.
+      ;   ;        .:@:'.       ;
+               .::(@:.       ;
+               :@):.      ;
+               .:@:'.
+              .::(@:.
+              :@):.
+            .:@:'.
+            .::(@:.
+            :@):.
+          .:@:'.
+        .::(@:.
+        :@):.
+      .:@:'.
+      .::(@:.
+      :@):.
+    .:@:'.
+    .::(@:.
+    :@):.
+  .:@:'.
+  .::(@:.
+  :@):.
+.:@:'.
+.::(@:.
+  </pre>
+
+  <pre id="flower" style="margin-top:-600px;margin-left:200px;">
+    _,-._
+   / \_/ \
+   >-(_)-<
+   \_/ \_/
+     `-'
+  </pre>
+
+  <pre id="flower2" style="margin-top:100px;margin-left:75px;">
+    _,-._
+   / \_/ \
+   >-(_)-<
+   \_/ \_/
+     `-'
+  </pre>
+
+  <pre id="flower3" style="margin-top:-150px;margin-left:250px;">
+    _,-._
+   / \_/ \
+   >-(_)-<
+   \_/ \_/
+     `-'
+  </pre>
+
+  <p id="message" class="message">Happy Hanami!</p>
+
+  <script>
+
+  $("#flower").fadeOut(30).fadeIn(2000);
+  $("#flower2").fadeOut(30).fadeIn(3000);
+  $("#flower3").fadeOut(30).fadeIn(1000);
+  $("#message").fadeOut(30).fadeIn(1000);
+
+  var leftOffset = 150;
+  var leftOffset2 = 75;
+  var leftOffset3 = 200;
+  var moveFlower = function () {
+    $("#flower").offset({ left: leftOffset });
+    leftOffset++;
+    if (leftOffset > 1300) {
+      leftOffset = 150;
+      $("#flower").fadeOut(30).fadeIn(2000);
+    }
+
+    $("#flower2").offset({ left: leftOffset2 });
+    leftOffset2++;
+
+    if (leftOffset2 > 1300) {
+      leftOffset2 = 75;
+      $("#flower2").fadeOut(30).fadeIn(3000);
+    }
+
+    $("#flower3").offset({ left: leftOffset3 });
+    leftOffset3++;
+
+    if (leftOffset3 > 1300) {
+      leftOffset3 = 200;
+      $("#flower3").fadeOut(30).fadeIn(1000);
+    }
+  };
+
+  setInterval(moveFlower, 15);
+
+  </script>
+
+</body>
+</html>
