@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'pixelfont';
+  src: url('pixel.ttf');
+}
+
+h1{
+  font-family:pixelfont;
+  font-size: 80px;
+  margin-top:200px;
+  color:white;
+}
+
+p{
+  font-family:pixelfont;
+  font-size: 20px;
+  margin-top:-50px;
+  color:white;
+}
+
+a{
+  font-family:Courier;
+  text-decoration: none;
+  font-size: 30px;
+  margin-top:20px;
+  color:LightGrey;
+}
+
+#snek{
+  margin-left:775px;
+  margin-top:-175px;
+}
+
+#flowers{
+  margin-top:-50px;
+}
+
+a:visited {
+    color:LightGrey;
+}
+
+a:hover {
+    color: white;
+}
